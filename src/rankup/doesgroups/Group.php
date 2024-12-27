@@ -2,7 +2,7 @@
 
 namespace rankup\doesgroups;
 
-use pocketmine\command\ConsoleCommandSender;
+use pocketmine\console\ConsoleCommandSender;
 use pocketmine\permission\Permission;
 use pocketmine\player\Player;
 
