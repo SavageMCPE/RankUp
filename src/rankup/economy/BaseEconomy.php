@@ -2,7 +2,7 @@
 
 namespace rankup\economy;
 
-use pocketmine\Player;
+use pocketmine\player\Player;
 use rankup\RankUp;
 
 abstract class BaseEconomy
