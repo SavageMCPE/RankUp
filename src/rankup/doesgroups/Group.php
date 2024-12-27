@@ -2,6 +2,7 @@
 
 namespace rankup\doesgroups;
 
+use pocketmine\lang\Language;
 use pocketmine\console\ConsoleCommandSender;
 use pocketmine\permission\Permission;
 use pocketmine\player\Player;
@@ -63,7 +64,7 @@ class Group
 
         //$player->removeAttachment($attachment);
         foreach ($this->entrance as $cmd) {
-            $this->getMain()->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{name}", $player->getName(), $cmd));
+            $this->getMain()->getServer()->dispatchCommand(new ConsoleCommandSender($this->getMain()->getServer(), Language::FALLBACK_LANGUAGE), str_replace("{name}", $player->getName(), $cmd));
         }
     }
 
