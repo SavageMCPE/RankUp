@@ -31,7 +31,7 @@ class RankUp extends PluginBase
     /** @var  RankUpCommand */
     private $rankupCommand;
 
-    public function onEnable()
+    protected function onEnable(): void
     {
         $this->saveDefaultConfig();
         $this->languageConfig = new LanguageConfig($this->getConfig());
@@ -50,7 +50,7 @@ class RankUp extends PluginBase
         $this->getServer()->getCommandMap()->register("rankup", $this->rankupCommand);
     }
 
-    public function loadRankUpDoesGroups()
+    public function loadRankUpDoesGroups(): void
     {
         if ($this->getConfig()->get('unleash-the-rankupdoesgroups') !== false) {
             $this->saveResource("groups.yml");
