@@ -4,7 +4,7 @@ namespace rankup\doesgroups;
 
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\permission\Permission;
-use pocketmine\Player;
+use pocketmine\player\Player;
 
 class Group
 {
