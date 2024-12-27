@@ -19,6 +19,7 @@ class RankUpCommand extends Command
     public function __construct(RankUp $main)
     {
         parent::__construct("rankup", "Get all the ranks.", "/rankup", ["ru"]);
+        $this->setPermission('rankup');
         $this->main = $main;
     }
 
