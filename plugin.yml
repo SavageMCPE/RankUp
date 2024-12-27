@@ -4,6 +4,7 @@ version: 2.0
 authors: ['Falkirks', 'zCode']
 api: 5.0.0
 load: POSTWORLD
+softdepend: ["EconomyAPI"]
 permissions:
  rankup:
   default: true
