@@ -6,15 +6,14 @@ api: 5.0.0
 load: POSTWORLD
 softdepend: ["EconomyAPI"]
 permissions:
- rankup:
-  default: true
-  children:
-    rankup.rankup:
-      default: true
-      description: Allow ranking up
-    rankup.admin:
-      default: op
-      description: Manage RankUp and view statistics
-    rankup.groups:
-      default: false
-      description: Do NOT set this. It is used for group managment.
+  rankup:
+    default: true
+  rankup.rankup:
+    default: true
+    description: 'Allow ranking up'
+  rankup.admin:
+    default: op
+    description: 'Manage RankUp and view statistics'
+  rankup.groups:
+    default: false
+    description: 'Do NOT set this. It is used for group managment.'
