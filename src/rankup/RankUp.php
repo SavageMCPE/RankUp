@@ -2,6 +2,7 @@
 
 namespace rankup;
 
+use pocketmine\permission\PermissionManager;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use rankup\command\RankUpCommand;
@@ -54,7 +55,7 @@ class RankUp extends PluginBase
     {
         if ($this->getConfig()->get('unleash-the-rankupdoesgroups') !== false) {
             $this->saveResource("groups.yml");
-            $this->rankUpDoesGroups = new RankUpDoesGroups(new Config($this->getDataFolder() . "/groups.yml", Config::YAML), $this->getServer()->getPluginManager()->getPermission("rankup.groups"), $this->getServer());
+            $this->rankUpDoesGroups = new RankUpDoesGroups(new Config($this->getDataFolder() . "/groups.yml", Config::YAML), PermissionManager::getInstance()->getPermission("rankup.groups"), $this->getServer());
             $this->getLogger()->info("Loaded DoesGroups.");
         }
     }
