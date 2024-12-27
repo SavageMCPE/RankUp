@@ -4,7 +4,7 @@ namespace rankup\economy;
 
 use EssentialsPEconomy\EssentialsPEconomy;
 use EssentialsPEconomy\Providers\BaseEconomyProvider;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 
 class EssentialsEconomy extends BaseEconomy
